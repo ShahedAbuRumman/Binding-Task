@@ -1,0 +1,5 @@
+<div class="search-container">
+    <input type="text" [(ngModel)]="searchText" placeholder="Enter text to highlight" />
+    <p [innerHTML]="textToSearch | highlighter: searchText : 'full'"></p>
+  </div>
+  
